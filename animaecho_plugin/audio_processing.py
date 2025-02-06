@@ -3,7 +3,7 @@ from io import BytesIO
 from pydub import AudioSegment
 
 # Main API endpoint URL
-API_ENDPOINT = "https://8441-2400-2411-3923-7000-5c97-fc8c-2bb3-9ece.ngrok-free.app/api/process_audio/"
+API_ENDPOINT = "https://animaecho-backend-prod-702ceda6ec03.herokuapp.com/api/process_audio/"
 
 def record_audio_as_blob(duration=5):
     import pyaudio
