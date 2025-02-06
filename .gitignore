@@ -2,4 +2,4 @@ build/
 dist/
 
 vtube_studio_token.json
-.json
+*.json

@@ -2,7 +2,34 @@
 
 AnimaEcho is a VTube Studio integration plugin that enables voice interaction with AI, allowing your avatar to respond in real-time using text-to-speech and lip sync animation.
 
-## Installation
+---
+
+##  Installation Guide (For Non-Developers)
+
+Follow these simple steps to use AnimaEcho without any coding.
+
+* **Download and extract the ZIP file.**
+* Navigate to the `run/` Folder
+* Run the Plugin
+
+#### Windows
+* Double-click on the `AnimaEcho.exe` file inside the `run/` folder.
+
+#### macOS/Linux
+* Double-click on the `AnimaEcho` file inside the `run/` folder, or open the terminal, navigate to the `run/` folder, and run:
+    ```bash
+    ./AnimaEcho
+    ```
+
+🎙️ The plugin will start recording audio, send it to the AnimaEcho API, and play back the response in sync with your VTube Studio avatar.
+
+### Requirements
+* VTube Studio must be running with the WebSocket API enabled.
+* Grant permission to the plugin when prompted in VTube Studio.
+
+--- 
+
+## Installation Guide (For Developers)
 
 1. Remove previous versions (if installed)
     ```bash
