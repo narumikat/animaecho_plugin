@@ -12,12 +12,9 @@ def main():
         processed_audio = send_audio_to_server(audio_blob)
 
         if processed_audio:
-            # print(f"🔊 Audio type: {type(processed_audio)}")
 
             if isinstance(processed_audio, AudioSegment):
-                print("✅ Proceeding with lip sync on VTubeStudio...")
                 asyncio.run(play_audio_with_lip_sync(processed_audio))
-                print("✅ Synchronization completed.")
             else:
                 print(f"❌ Unexpected audio format: {type(processed_audio)}")
         else:

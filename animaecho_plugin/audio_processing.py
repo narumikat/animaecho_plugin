@@ -37,7 +37,6 @@ def send_audio_to_server(audio_blob):
         response = requests.post(API_ENDPOINT, files=files)
 
         if response.status_code == 200:
-            print("✅ Audio processed successfully.")
             response_data = response.json()
 
             if "audio_file" in response_data:
