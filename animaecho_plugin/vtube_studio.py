@@ -13,6 +13,7 @@ import numpy as np
 VTUBE_STUDIO_URL = "ws://localhost:8001/"
 TOKEN_FILE = "vtube_studio_token.json"
 
+
 def save_auth_token(token):
     print("💾 Saving authentication token to local file...")
     with open(TOKEN_FILE, "w") as token_file:
@@ -73,6 +74,40 @@ async def authenticate_with_vtube_studio(websocket):
     }
     await websocket.send(json.dumps(auth_request_payload))
     await websocket.recv()
+    await create_button(websocket)
+
+
+async def create_button(websocket):
+    print("📋 Creating button in VTube Studio...")
+    button_payload = {
+        "apiName": "VTubeStudioPublicAPI",
+        "apiVersion": "1.0",
+        "requestID": "create_button_001",
+        "messageType": "EventSubscriptionRequest",
+        "data": {
+            "subscribe": True,
+            "eventName": "HotkeyTriggered",
+            "pluginName": "AnimaEcho"
+        }
+    }
+    await websocket.send(json.dumps(button_payload))
+    response = await websocket.recv()
+    print("✅ Button created:", response)
+
+
+
+async def handle_button_press(websocket):
+    from animaecho_plugin.main import main
+    print("📥 Listening for button press events...")
+    async for message in websocket:
+        data = json.loads(message)
+        if data["messageType"] == "CustomEvent" and data["data"]["eventType"] == "buttonPress":
+            print("🎤 Button pressed! Starting recording and sync...")
+            try:
+                # Call the main function when the button is pressed
+                main()
+            except Exception as e:
+                print(f"❌ Error handling button press: {str(e)}")
 
 
 async def send_lip_sync(websocket, audio, chunk_duration=100, stop_before=0.8):
@@ -115,6 +150,9 @@ async def play_audio_with_lip_sync(audio_input):
     print("🌐 Connecting to VTube Studio WebSocket...")
     async with websockets.connect(VTUBE_STUDIO_URL) as websocket:
         await authenticate_with_vtube_studio(websocket)
+
+        await handle_button_press(websocket)
+
         print("🔊 Playing audio...")
         audio_thread = threading.Thread(target=lambda: play(audio))
         audio_thread.start()
