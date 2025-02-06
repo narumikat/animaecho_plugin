@@ -1,20 +1,17 @@
 import asyncio
+import base64
+
 import websockets
 import json
+import os
 from pydub import AudioSegment
 from pydub.playback import play
 import threading
 from io import BytesIO
 import numpy as np
 
-
 VTUBE_STUDIO_URL = "ws://localhost:8001/"
 TOKEN_FILE = "vtube_studio_token.json"
-
-
-def calculate_intensity(audio):
-    samples = np.array(audio.get_array_of_samples())
-    return np.abs(samples).mean() / np.iinfo(samples.dtype).max
 
 
 # async def authenticate_with_vtube_studio(websocket):
@@ -38,11 +35,22 @@ def save_auth_token(token):
         json.dump({"auth_token": token}, token_file)
 
 
+def calculate_intensity(audio):
+    samples = np.array(audio.get_array_of_samples())
+    return np.abs(samples).mean() / np.iinfo(samples.dtype).max
+
+
+def decode_and_convert_audio(audio_base64):
+    audio_data = base64.b64decode(audio_base64)
+    return AudioSegment.from_file(BytesIO(audio_data))
+
+
 def load_auth_token():
     if os.path.exists(TOKEN_FILE):
         with open(TOKEN_FILE, "r") as token_file:
             return json.load(token_file).get("auth_token")
     return None
+
 
 async def authenticate_with_vtube_studio(websocket):
     auth_token = load_auth_token()
@@ -105,7 +113,13 @@ async def send_lip_sync(websocket, audio, chunk_duration=100, stop_before=0.8):
         await asyncio.sleep(chunk_duration / 1000)
 
 
-async def play_audio_with_lip_sync(audio):
+async def play_audio_with_lip_sync(audio_input):
+    if isinstance(audio_input, str):
+        audio = decode_and_convert_audio(audio_input)
+    elif isinstance(audio_input, AudioSegment):
+        audio = audio_input
+    else:
+        raise TypeError("Invalid audio input. Must be Base64 string or AudioSegment.")
     async with websockets.connect(VTUBE_STUDIO_URL) as websocket:
         await authenticate_with_vtube_studio(websocket)
         audio_thread = threading.Thread(target=lambda: play(audio))

@@ -11,7 +11,6 @@ API_ENDPOINT = "https://8441-2400-2411-3923-7000-5c97-fc8c-2bb3-9ece.ngrok-free.
 
 
 def send_audio_to_server(audio_blob):
-
     try:
         print("Sending audio to the main API...")
         files = {'audio': ('audio.wav', audio_blob, 'audio/wav')}
@@ -38,13 +37,33 @@ def main():
 
         if processed_audio:
             print("Starting sync with VTube Studio...")
-            asyncio.run(play_audio_with_lip_sync(processed_audio))
+            audio = AudioSegment.from_file(processed_audio)
+            asyncio.run(play_audio_with_lip_sync(audio))
             print("✅ Synchronization completed.")
         else:
             print("❌ Failed to process audio.")
 
     except Exception as e:
         print(f"❌ Plugin error: {str(e)}")
+
+
+# def main():
+#     try:
+#         print("🎙️ Recording audio...")
+#         audio_blob = record_audio_as_blob(duration=5)
+#         print("✅ Recording completed.")
+#
+#         processed_audio = send_audio_to_server(audio_blob)
+#
+#         if processed_audio:
+#             print("Starting sync with VTube Studio...")
+#             asyncio.run(play_audio_with_lip_sync(processed_audio))
+#             print("✅ Synchronization completed.")
+#         else:
+#             print("❌ Failed to process audio.")
+#
+#     except Exception as e:
+#         print(f"❌ Plugin error: {str(e)}")
 
 
 if __name__ == "__main__":

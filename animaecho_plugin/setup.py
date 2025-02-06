@@ -12,7 +12,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "animaecho=animaecho.main:main",
+            "animaecho=animaecho_plugin.main:main",
         ]
     },
     description="Plugin to integrate VTube Studio with AnimaEcho.",
