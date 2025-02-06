@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: animaecho-plugin
+Version: 1.0
+Summary: Plugin to integrate VTube Studio with AnimaEcho.
+Home-page: https://github.com/narumikat/animaecho_plugin
+Author: Narumi Katayama
+Author-email: narumi.kataiama@gmail.com
+Requires-Dist: pyaudio
+Requires-Dist: pydub
+Requires-Dist: websockets
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary

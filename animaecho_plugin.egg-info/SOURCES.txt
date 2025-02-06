@@ -1,0 +1,16 @@
+README.md
+animaecho_plugin/__init__.py
+animaecho_plugin/asgi.py
+animaecho_plugin/audio_processing.py
+animaecho_plugin/main.py
+animaecho_plugin/settings.py
+animaecho_plugin/setup.py
+animaecho_plugin/urls.py
+animaecho_plugin/vtube_studio.py
+animaecho_plugin/wsgi.py
+animaecho_plugin.egg-info/PKG-INFO
+animaecho_plugin.egg-info/SOURCES.txt
+animaecho_plugin.egg-info/dependency_links.txt
+animaecho_plugin.egg-info/entry_points.txt
+animaecho_plugin.egg-info/requires.txt
+animaecho_plugin.egg-info/top_level.txt
