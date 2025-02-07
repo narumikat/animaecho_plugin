@@ -15,9 +15,11 @@ AnimaEcho is a VTube Studio integration plugin that enables voice interaction wi
 
 ### Requirements
 * VTube Studio must be running with the **WebSocket API enabled**.
+
   <img src="assets/vtube_studio_settings.png" alt="animaecho vtube studio settings" width="300" style="margin:30px"/>
 
 * Grant permission to the plugin **when prompted in VTube Studio**.
+
   <img src="assets/vtube_plugin_permission.png" alt="animaecho vtube plugin permission" width="300" style="margin:30px"/>
 
 --- 
@@ -59,6 +61,8 @@ When running the AnimaEcho executable file, you may encounter security warnings 
 * **Problem:**  
 When trying to run the executable, you see the message:  
 > `"AnimaEcho" Not Opened`
+
+DON'T MOVE TO TRASH
 
 <img src="assets/problem.png" alt="plugin permissions" width="200" style="margin:30px"/>
 
