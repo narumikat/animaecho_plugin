@@ -72,7 +72,8 @@ async def authenticate_with_vtube_studio(websocket):
         }
     }
     await websocket.send(json.dumps(auth_request_payload))
-    await websocket.recv()
+    token_response = await websocket.recv()
+    # print(f"Token Response: {token_response}")
 
 
 async def send_lip_sync(websocket, audio, chunk_duration=100, stop_before=0.8):

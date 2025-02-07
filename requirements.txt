@@ -1,11 +1,16 @@
+altgraph==0.17.4
 asgiref==3.8.1
 certifi==2025.1.31
 charset-normalizer==3.4.1
 Django==5.1.6
 idna==3.10
+macholib==1.16.3
 numpy==2.2.2
+packaging==24.2
 PyAudio==0.2.14
 pydub==0.25.1
+pyinstaller==6.11.1
+pyinstaller-hooks-contrib==2025.1
 requests==2.32.3
 setuptools==75.8.0
 sqlparse==0.5.3
