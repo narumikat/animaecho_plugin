@@ -46,10 +46,11 @@ Follow these simple steps to use AnimaEcho without any coding.
 * Double-click on the `AnimaEcho.exe` file inside the `run/Windows` folder.
 
 #### macOS/Linux
-* On terminal navigate to the `dist/` folder, and run:
+* On terminal navigate to the `run/macOS_Linux` folder, and run:
     ```bash
     ./AnimaEcho
     ```
+
 
 ### How It Works
 
