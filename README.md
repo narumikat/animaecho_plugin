@@ -6,6 +6,8 @@ AnimaEcho is a VTube Studio integration plugin that enables voice interaction wi
 
 ##  Installation Guide (For Non-Developers)
 
+## Option 1 (executable file)
+
 Follow these simple steps to use AnimaEcho without any coding.
 
 * **Download and extract the ZIP file.**
@@ -13,15 +15,51 @@ Follow these simple steps to use AnimaEcho without any coding.
 * Run the Plugin
 
 #### Windows
-* Double-click on the `AnimaEcho.exe` file inside the `run/` folder.
+* Double-click on the `AnimaEcho.exe` file inside the `run/Windows` folder.
 
 #### macOS/Linux
-* Double-click on the `AnimaEcho` file inside the `run/` folder, or open the terminal, navigate to the `run/` folder, and run:
+* Double-click on the `AnimaEcho` file inside the `run/macOS_Linux` folder, or open the terminal, navigate to the `run/` folder, and run:
     ```bash
     ./AnimaEcho
     ```
 
 🎙️ The plugin will start recording audio, send it to the AnimaEcho API, and play back the response in sync with your VTube Studio avatar.
+
+## Option 2 (Automatic Virtual Environment)
+Install the plugin without conflicts in the system, create an automatic installation script with a virtual environment.
+
+### Windows
+* Double-click on `install_animaecho.bat` file inside `run/Windows` folder.
+
+### macOS/Linux
+
+* Navigate to the folder where the script is saved and run the script.
+
+```bash
+cd run/macOS_Linux
+chmod +x install_animaecho.sh
+./install_animaecho.sh
+```
+
+* The script created a virtual environment `(animaecho_env)`, activate it before running AnimaEcho
+
+```bash
+source animaecho_env/bin/activate
+```
+
+* Run the command below within the virtual environment
+
+```bash
+animaecho
+```
+
+This will create the virtual environment, automatically activate and install AnimaEcho.
+
+* To exit the Python virtual environment, run the command:
+
+```bash
+deactivate
+```
 
 ### Requirements
 * VTube Studio must be running with the WebSocket API enabled.

@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e587c8e-6ff5-44b7-bb39-bc14c57a5627" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/run/Windows/install_animaecho.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/macOS_Linux/install_animaecho.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/animaecho_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/animaecho_plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/AnimaEcho" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2se4ieAfLydom7JynydDfZRul61" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,7 +32,7 @@
   "keyToString": {
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "auth__vtube",
+    "git-widget-placeholder": "installation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738802834728</updated>
       <workItem from="1738802844232" duration="9961000" />
+      <workItem from="1738888258014" duration="3108000" />
     </task>
     <servers />
   </component>
