@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e587c8e-6ff5-44b7-bb39-bc14c57a5627" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/Windows/AnimaEcho.exe" beforeDir="false" afterPath="$PROJECT_DIR$/run/Windows/AnimaEcho.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/Windows/dist/animaecho_plugin-1.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/macOS_Linux/dist/animaecho_plugin-1.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/macOS_Linux/install_animaecho.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run/macOS_Linux/install_animaecho.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +89,7 @@
       <updated>1738802834728</updated>
       <workItem from="1738802844232" duration="9961000" />
       <workItem from="1738888258014" duration="3108000" />
-      <workItem from="1738893585696" duration="5302000" />
+      <workItem from="1738893585696" duration="5978000" />
     </task>
     <servers />
   </component>
