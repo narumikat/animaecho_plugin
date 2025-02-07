@@ -16,3 +16,4 @@ setuptools==75.8.0
 sqlparse==0.5.3
 urllib3==2.3.0
 websockets==14.2
+requests==2.32.3

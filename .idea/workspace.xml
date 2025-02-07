@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e587c8e-6ff5-44b7-bb39-bc14c57a5627" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animaecho_plugin/vtube_studio.py" beforeDir="false" afterPath="$PROJECT_DIR$/animaecho_plugin/vtube_studio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/Windows/dist/animaecho_plugin-1.0-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/run/Windows/dist/animaecho_plugin-1.0-py3-none-any.whl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/macOS_Linux/AnimaEcho" beforeDir="false" afterPath="$PROJECT_DIR$/run/macOS_Linux/AnimaEcho" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/macOS_Linux/dist/animaecho_plugin-1.0-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/run/macOS_Linux/dist/animaecho_plugin-1.0-py3-none-any.whl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/Windows/AnimaEcho.exe" beforeDir="false" afterPath="$PROJECT_DIR$/run/Windows/AnimaEcho.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/Windows/dist/animaecho_plugin-1.0-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/macOS_Linux/dist/animaecho_plugin-1.0-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/macOS_Linux/install_animaecho.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run/macOS_Linux/install_animaecho.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,7 +95,7 @@
       <updated>1738802834728</updated>
       <workItem from="1738802844232" duration="9961000" />
       <workItem from="1738888258014" duration="3108000" />
-      <workItem from="1738893585696" duration="602000" />
+      <workItem from="1738893585696" duration="5302000" />
     </task>
     <servers />
   </component>
