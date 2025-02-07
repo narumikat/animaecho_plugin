@@ -15,10 +15,10 @@ AnimaEcho is a VTube Studio integration plugin that enables voice interaction wi
 
 ### Requirements
 * VTube Studio must be running with the **WebSocket API enabled**.
-  <img src="assets/vtube_studio_settings.png" alt="animaecho vtube studio settings" width="400" style="margin:30px"/>
+  <img src="assets/vtube_studio_settings.png" alt="animaecho vtube studio settings" width="300" style="margin:30px"/>
 
 * Grant permission to the plugin **when prompted in VTube Studio**.
-  <img src="assets/vtube_plugin_permission.png" alt="animaecho vtube plugin permission" width="400" style="margin:30px"/>
+  <img src="assets/vtube_plugin_permission.png" alt="animaecho vtube plugin permission" width="300" style="margin:30px"/>
 
 --- 
 
@@ -51,6 +51,28 @@ Follow these simple steps to use AnimaEcho without any coding.
     ./AnimaEcho
     ```
 
+### Troubleshooting for Executable File
+
+When running the AnimaEcho executable file, you may encounter security warnings or execution issues on macOS. Below are the common problems and their solutions:
+#### **macOS Security Warnings**
+
+* **Problem:**  
+When trying to run the executable, you see the message:  
+> `"AnimaEcho" Not Opened`
+
+<img src="assets/problem.png" alt="plugin permissions" width="200" style="margin:30px"/>
+
+### Solution:
+
+1. Open **System Preferences > Privacy & Security**.
+2. Under the **General** tab, click **Allow Anyway** next to the blocked app warning.
+  > "AnimaEcho" was blocked to protect your Mac.
+
+<img src="assets/problem2.png" alt="plugin permissions" width="400" style="margin:30px"/>
+  
+3. Run the executable again `./AnimaEcho`, and confirm if prompted `Open Anyway`.
+
+<img src="assets/problem3.png" alt="plugin permissions" width="200" style="margin:30px"/>
 
 ### How It Works
 

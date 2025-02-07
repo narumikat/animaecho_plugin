@@ -7,7 +7,6 @@
     <list default="true" id="9e587c8e-6ff5-44b7-bb39-bc14c57a5627" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/AnimaEcho" beforeDir="false" afterPath="$PROJECT_DIR$/run/macOS_Linux/AnimaEcho" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +95,7 @@
       <workItem from="1738802844232" duration="9961000" />
       <workItem from="1738888258014" duration="3108000" />
       <workItem from="1738893585696" duration="6546000" />
+      <workItem from="1738900519358" duration="1063000" />
     </task>
     <servers />
   </component>
