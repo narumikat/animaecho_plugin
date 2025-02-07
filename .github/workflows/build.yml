@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: AnimaEcho-windows
-          path: run/Windows/dist/AnimaEcho.exe
+          path: dist/AnimaEcho.exe
