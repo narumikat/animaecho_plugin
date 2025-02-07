@@ -1,0 +1,30 @@
+name: Build Executable
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Install Dependencies
+        run: pip install pyinstaller
+
+      - name: Build Executable
+        run: pyinstaller --onefile --name AnimaEcho animaecho_plugin/main.py
+
+      - name: Upload Executable
+        uses: actions/upload-artifact@v3
+        with:
+          name: AnimaEcho-windows
+          path: dist/AnimaEcho.exe
