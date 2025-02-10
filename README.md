@@ -1,6 +1,6 @@
 # AnimaEcho Plugin
 
-AnimaEcho is a VTube Studio integration plugin that enables voice interaction with AI, allowing your avatar to respond in real-time using text-to-speech and lip sync animation.
+AnimaEcho is a [VTube Studio](https://store.steampowered.com/app/1325860/VTube_Studio/) integration plugin that enables voice interaction with AI, allowing your avatar to respond in real-time using text-to-speech and lip sync animation.
 
 ---
 
@@ -182,7 +182,7 @@ pip install --force-reinstall dist/animaecho_plugin-1.0-py3-none-any.whl
 ## Troubleshooting
 
 #### If you encounter issues, check the following:
-- Ensure **VTube Studio** is running and the WebSocket API is **enabled**.
+- Ensure **[VTube Studio](https://store.steampowered.com/app/1325860/VTube_Studio/)** is running and the WebSocket API is **enabled**.
 - Verify that the plugin has been **granted permission** in VTube Studio.
 - Check the **Python environment** and ensure dependencies are installed.
 - If you see an **FFmpeg error**, ensure `ffmpeg` is installed and accessible from the command line.
